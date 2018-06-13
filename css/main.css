@@ -159,3 +159,10 @@ footer {
     line-height: 47px;
     margin-top: 50px;
 }
+
+.bx-wrapper, .bx-viewport {
+    max-height: 250px;
+}
+.bx-wrapper img{
+    margin: 0 0 200px 0;
+}
