@@ -10,6 +10,7 @@ $(document).ready(function () {
             scrollTop.fadeOut(duration);
         }
     });
+
     //Click event to scroll to top
     $(scrollTop).click(function (e) {
         e.preventDefaul();
@@ -51,7 +52,7 @@ $(document).ready(function () {
 
     ];
 
-    posts.forEach((item, index) => {
+    posts.forEach((item) => {
         var post = `
             <article class="post" >
                 <h2>${item.title}</h2> 
@@ -63,5 +64,24 @@ $(document).ready(function () {
         $('#posts').append(post);
     });
 
+    //Login falso
+
+    $('#login form').submit(function () {
+        var form_name = $('#form_name').val();
+
+        localStorage.setItem('form_name', form_name);
+    });
+
+    var form_name = localStorage.getItem('form_name');
+
+    if (form_name != null && form_name != undefined) {
+        $('#about p').html('Bienvenido, ' + form_name);
+        $('#about p').append('</br></br><a href="#" id="logout">Cerrar Sesión</a>');
+        $('#login').hide();
+        $('#logout').click(function () {
+            localStorage.clear();
+            location.reload();
+        });
+    }
 
 });

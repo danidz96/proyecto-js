@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -18,15 +18,15 @@ body {
     display: table;
 }
 
-#container{
+#container {
     width: 65%;
     margin: 0 auto;
     padding: 20px;
     background: rgb(236, 236, 236);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-#logo{
+#logo {
     font-size: 50px;
     letter-spacing: 4px;
     background: #8e44ad;
@@ -76,29 +76,30 @@ body {
     float: left;
 }
 
-.post{
+.post {
     text-align: justify;
     color: #4E5056;
 }
 
-.date{
+.date {
     color: gray;
     display: block;
     margin-top: 5px;
 }
+
 .post p {
     margin-top: 15px;
     margin-bottom: 20px;
     line-height: 22px;
 }
 
-.button-more { 
+.button-more {
     padding: 12px 20px;
     background: #8e44ad;
     color: white;
     text-decoration: none;
     display: block;
-    text-align: center;    
+    text-align: center;
     width: 70px;
     margin-bottom: 35px;
 }
@@ -120,7 +121,7 @@ body {
 #sidebar img {
     width: 100%;
     margin-bottom: 20px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 3px 3px rgba(0, 0, 0, 0.23);
 }
 
 #sidebar p {
@@ -130,9 +131,7 @@ body {
     text-align: justify;
 }
 
-form input[type="text"],
-form input[type="password"],
-form input[type="email"] {
+form input[type="text"], form input[type="password"], form input[type="email"] {
     padding: 5px;
     border-radius: 2px;
     border: 1px solid #ccc;
@@ -142,11 +141,13 @@ form input[type="email"] {
     margin-top: 5px;
 }
 
-form input[type="submit"] {
+form input[type="submit"], #logout {
     background: #bdc3c7;
     padding: 7px 10px;
     border: none;
     cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 footer {
@@ -163,7 +164,8 @@ footer {
 .bx-wrapper, .bx-viewport {
     max-height: 250px;
 }
-.bx-wrapper img{
+
+.bx-wrapper img {
     margin: 0 0 200px 0;
 }
 
@@ -178,7 +180,6 @@ footer {
     border-radius: 50%;
     font-size: 22px;
     text-align: center;
-    
 }
 
 .fas {
