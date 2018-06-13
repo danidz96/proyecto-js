@@ -148,3 +148,14 @@ form input[type="submit"] {
     border: none;
     cursor: pointer;
 }
+
+footer {
+    color: white;
+    height: 47px;
+    background: rgba(51, 51, 51, .7);
+    margin: 0 auto;
+    width: 65%;
+    padding: 0 20px;
+    line-height: 47px;
+    margin-top: 50px;
+}
