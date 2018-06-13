@@ -66,5 +66,36 @@ body {
     padding: 0 20px;
 }
 
+#posts {
+    width: 60%;
+    float: left;
+    padding-left: 10px;
+}
 
+.post{
+    text-align: justify;
+    color: #4E5056;
+}
+
+.date{
+    color: gray;
+    display: block;
+    margin-top: 5px;
+}
+.post p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+
+.button-more { 
+    padding: 12px 20px;
+    background: #8e44ad;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;    
+    width: 70px;
+    margin-bottom: 20px;
+}
 
