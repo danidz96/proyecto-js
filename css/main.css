@@ -2,13 +2,14 @@
     margin: 0px;
     padding: 0px;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
 }
+
 body {
     background: linear-gradient(90deg, rgba(63, 94, 251, 0.5) 0%, rgba(252, 70, 107, 0.5) 100%), url('../img/hero-img.jpg') no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Roboto', sans-serif;
 }
 
 .clearfix::after {
@@ -35,6 +36,34 @@ body {
     width: 50%;
     float: left;
     padding-left: 20px;
+}
+
+#menu {
+    text-transform: uppercase;
+    background: #2c3e50;
+    width: 100%;
+    margin: 20px 0;
+}
+
+#menu ul {
+    line-height: 46px;
+}
+
+#menu ul li {
+    display: inline-block;
+    height: 46px;
+    transition: all 300ms;
+}
+
+#menu ul li:hover {
+    background: #8e44ad;
+}
+
+#menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
 }
 
 
