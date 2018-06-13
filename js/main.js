@@ -1,6 +1,28 @@
 $(document).ready(function () {
+    var offset = 120;
+    var duration = 500;
+    var scrollTop = $(".to-top");
+    scrollTop.hide();
+    $(window).scroll(function () {
+        if($(this).scrollTop() > offset){
+            scrollTop.fadeIn(duration);
+        } else {
+            scrollTop.fadeOut(duration);
+        }
+    });
+    //Click event to scroll to top
+    $(scrollTop).click(function (e) {
+        e.preventDefaul();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+
+    });
+
     $('.slider').bxSlider({
         mode: 'fade',
+        captions: false,
         slideWidth: 1200,
         responsive: true,
         adaptiveHeight: true
@@ -40,7 +62,6 @@ $(document).ready(function () {
         `;
         $('#posts').append(post);
     });
-    console.log(posts);
 
 
 });
