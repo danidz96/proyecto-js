@@ -66,10 +66,14 @@ body {
     padding: 0 20px;
 }
 
+#content {
+    width: 97%;
+    margin: 0 auto;
+}
+
 #posts {
     width: 60%;
     float: left;
-    padding-left: 10px;
 }
 
 .post{
@@ -96,6 +100,51 @@ body {
     display: block;
     text-align: center;    
     width: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
+#sidebar {
+    width: 33%;
+    float: right;
+}
+
+#sidebar h4 {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+    color: #4E5056;
+    font-size: 20px;
+}
+
+#sidebar img {
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 3px 3px rgba(0,0,0,0.23);
+}
+
+#sidebar p {
+    color: #4E5056;
+    margin-bottom: 20px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    width: 80%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 2px gray;
+    margin-top: 5px;
+}
+
+form input[type="submit"] {
+    background: #bdc3c7;
+    padding: 7px 10px;
+    border: none;
+    cursor: pointer;
+}
