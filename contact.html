@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
         crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
-    <script src="js/about.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <script src="js/contact.js"></script>
 </head>
 
 <body>
@@ -46,30 +46,26 @@
         <!-- Contenido -->
         <section id="content">
             <div id="box">
-                <h2>Sobre Nosotros</h2>
-                <div id="acordeon">
-                    <h3>¿Quienes somos?</h3>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, veniam ipsam. Doloremque animi dicta rerum corporis
-                            impedit.
-                        </p>
-                    </div>
-                    <h3>Nuestros servicios</h3>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, veniam ipsam. Doloremque animi dicta rerum corporis
-                            impedit.
-                        </p>
-                    </div>
-                    <h3>Nuestros clientes</h3>
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, veniam ipsam. Doloremque animi dicta rerum corporis
-                            impedit.
-                        </p>
-                    </div>
-                </div>
+                <h2>Contacto</h2>
+
+                <form action="" method="POST" class="form_contact">
+                    <label for="name">Nombre </label>
+                    <input type="text" name="name" data-validation="alphanumeric required">
+                    <label for="surname"> Apellido</label>
+                    <input type="text" name="surname">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" data-validation="email required">
+                    <label for="sex">Sexo</label>
+                    <select name="sex">
+                        <option value="men">Hombre</option>
+                        <option value="women">Mujer</option>
+                        <option value="other">Otro</option>
+                    </select>
+                    <label for="date">Fecha de nacimiento</label>
+                    <input type="date" name="date" data-validation="date required">
+                    <br>
+                    <input type="submit" value="Enviar">
+                </form>
             </div>
 
             <aside id="sidebar">
